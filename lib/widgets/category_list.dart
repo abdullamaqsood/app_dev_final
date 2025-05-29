@@ -44,18 +44,21 @@ class CategoryList extends StatelessWidget {
               itemCount: sortedCategories.length,
               itemBuilder: (context, index) {
                 final cat = sortedCategories[index];
-                return Padding(
-                  padding: const EdgeInsets.only(right: 16),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 25,
-                        backgroundColor: Colors.white,
-                        child: _getIconForCategory(cat.name),
-                      ),
-                      const SizedBox(height: 5),
-                      Text(cat.name, style: const TextStyle(fontSize: 12)),
-                    ],
+                return GestureDetector(
+                  onTap: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 25,
+                          backgroundColor: Colors.white,
+                          child: _getIconForCategory(cat.name),
+                        ),
+                        const SizedBox(height: 5),
+                        Text(cat.name, style: const TextStyle(fontSize: 12)),
+                      ],
+                    ),
                   ),
                 );
               },
