@@ -1,16 +1,27 @@
 # app_dev_final
 
-A new Flutter project.
+Made by Abdullah Maqsood-24448
 
-## Getting Started
+Note: 
+I have added the data to firestore according to following models:
 
-This project is a starting point for a Flutter application.
+BannerModel({
+    required this.title,
+    required this.subTitle,
+    required this.buttonText,
+    required this.sideText,
+    required this.image,
+});
 
-A few resources to get you started if this is your first Flutter project:
+CategoryModel({
+    required this.id, 
+    required this.name
+});
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ProductModel({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.image,
+});
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
