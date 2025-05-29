@@ -8,22 +8,22 @@ Note:
 I have added the data to firestore according to following models:
 
 BannerModel({
-    required this.title,
-    required this.subTitle,
-    required this.buttonText,
-    required this.sideText,
-    required this.image,
+  final String title;
+  final String subTitle;
+  final String buttonText;
+  final String sideText;
+  final String image;
 });
 
 CategoryModel({
-    required this.id, 
-    required this.name
+  final String id;
+  final String name;
 });
 
 ProductModel({
-    required this.id,
-    required this.name,
-    required this.price,
-    required this.image,
+  final String id;
+  final String name;
+  final double price;
+  final String image;
 });
 
