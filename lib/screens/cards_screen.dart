@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ProductDetailsScreen extends StatefulWidget {
-  const ProductDetailsScreen({super.key});
+class CardsScreen extends StatefulWidget {
+  const CardsScreen({super.key});
 
   @override
-  State<ProductDetailsScreen> createState() => _ProductDetailsScreenState();
+  State<CardsScreen> createState() => _CardsScreenState();
 }
 
-class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
+class _CardsScreenState extends State<CardsScreen> {
   final PageController _pageController = PageController(viewportFraction: 0.88);
 
   @override

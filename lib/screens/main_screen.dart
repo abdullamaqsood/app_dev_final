@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen_content.dart';
-import 'product_detail_screen.dart';
+import 'cards_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
         index: selectedIndex,
         children: const [
           HomeScreenContent(),
-          ProductDetailsScreen(),
+          CardsScreen(),
           Placeholder(),
           Placeholder(),
           Placeholder(),
